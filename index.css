@@ -120,5 +120,5 @@ button:hover {
   width: 100%; /* Make the image take full width of its container */
   max-width: 400px; /* Limit the maximum width */
   margin: 20px auto; /* Center the image and add vertical spacing */
-  border: none; /* Ensure no border is added 
+  border: none; /* Ensure no border is added*/
 }
