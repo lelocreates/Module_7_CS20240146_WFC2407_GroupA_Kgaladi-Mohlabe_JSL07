@@ -24,13 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
   
-      // 🚨 Generate certificate content dynamically
-      certificateContent.innerHTML = `
+      // 🚨 Generate certificate content dynamically 
+      // added .innerHTML and the dynamic fields and static text
+      certificateContent.innerHTML = ` 
       <h1>Certificate of Achievement</h1>
       <p>This is to certify that</p>
       <h3>${studentName}</h3>
       <p>has almost completed</p>
       <h3>${courseName}</h3>
+      <p>with lengendary perseverance, and world class bad-assery for never giving up! 🏆</p>
       <img src="logo.png" alt="Certificate Image" class="logo" />
       <h3>${personalMessage}</h3>
     `;
@@ -45,8 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
+    // add event listener and the parameters 
     closeModal.addEventListener('click', function () {
-      
+      this.parentElement.style.display = 'none';
     });
   });
   
